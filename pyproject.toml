@@ -1,0 +1,17 @@
+[project]
+name = "dmoney-automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "imap-tools>=1.16.0",
+    "pytest>=9.1.1",
+    "pytest-playwright>=0.10.0",
+]
+
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--base-url https://dmoneyportal.roadtocareer.net"
